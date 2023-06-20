@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden;
 }
 
 nav{
@@ -97,7 +98,7 @@ button{
 
 .subscribe-form{
 text-align: center;
-padding-bottom: 50px;
+padding-bottom: 150px;
 }
 
 .input-subscribe{
@@ -109,4 +110,115 @@ padding-bottom: 50px;
 
 .subscribe-btn{
     border-radius: none !important;
+}
+
+/* footer */
+/* footer */
+.footer{
+    display: flex;
+}
+
+.footer-left{
+    width: 700px;
+}
+
+
+.footer-logo {
+    margin-left: 120px;
+    width: 180px;
+    height: 140px;
+    /* border: #000000 solid; */
+    box-sizing: border-box;
+}
+
+
+.footer-para{
+    margin-left: 120px;
+    color: #515151;
+    margin-bottom: 0;
+    width: 300px;
+    margin-bottom: 250px;
+}
+
+.footer-icon{
+    width: 100px;
+    margin-left: 110px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-icon a{
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+.github:hover{
+    color: #333;
+}
+
+.linkedin:hover{
+    color: #0077B5;
+}
+
+.instagram:hover{
+    color: #C13584;
+}
+
+.twitter:hover{
+    color: #1DA1F2;
+}
+
+
+.back-to-top{
+    display: flex;
+    margin-top: 280px;
+    margin-left: 15%;
+}
+
+.back-to-top a{
+    color: #515151;
+}
+
+.footer-title{
+    padding-top: 25px;
+    padding-left: 55px;
+}
+
+.footer-nav{
+    margin-top: 70px;
+}
+
+.footer-about{
+    text-decoration: none;
+}
+
+.footer-about-us{
+    padding-bottom: 50px;
+    color: #515151;
+}
+
+.footer-contact-us{
+    color: #515151;
+}
+
+.footer-contact{
+    text-decoration: none;
+}
+
+.footer-copyright{
+    text-align: center;
+    margin-top: 50px;
+    background-color: #E7424B;
+    color: #ffffff;
+    padding: 25px;
+    width: 100%;
+    margin-left: 7.5%;
+    margin-left: 0;
+}
+
+.footer-copyright-text a{
+    text-decoration: none;
+    color: #ffffff;
 }
