@@ -8,6 +8,22 @@ nav{
     font-family: 'Poppins', sans-serif;
 }
 
+button{
+    background-color: #E7424B;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px !important;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 256px;
+}
+
 /* navbar */
 .navbar .container{
     max-width: 1500px;
@@ -23,4 +39,28 @@ nav{
     color: #e7424abb;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+/* hero funds */
+.title{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.progress .custom-color{
+    background-color: #E7424B;    
+}
+
+.card-body .card-text-bold{
+    font-weight: bold;
+}
+
+.btn{
+    color: #ffffff !important;
+}
+
+{
+    display: grid;
+
 }
