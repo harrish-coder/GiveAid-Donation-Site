@@ -6,13 +6,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 body{
     font-family: 'Poppins', sans-serif !important;
     overflow-x: hidden;
-}
-
-nav{
-    font-family: 'Poppins', sans-serif;
 }
 
 button{
@@ -29,6 +26,14 @@ button{
     padding-bottom: 12px;
     padding-top: 12px;
     width: 256px;
+}
+
+h5, .card-text{
+    text-align: center;
+}
+
+.steps-count{
+    margin-left: 130px;
 }
 
 /* navbar */
@@ -48,74 +53,22 @@ button{
     font-weight: 700;
 }
 
-/* hero funds */
+.card{
+    width: 500px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+}
+
+.card img{
+    margin-left: 70px;
+}
+
+/* cards */
 .title{
     text-align: center;
-    padding-top: 100px;
     padding-bottom: 50px;
-}
-
-.progress .custom-color{
-    background-color: #E7424B;    
-}
-
-.card-body .card-text-bold{
-    font-weight: bold;
-}
-
-.btn{
-    color: #ffffff !important;
-}
-
-/* showcase area */
-.showcase-area{
-    margin-top: 150px;
-    background-color: #F2F2F2;
-}
-
-.showcase-area .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-}
-
-.showcase-area .container .right img{
-    padding: 5%;
-    border-radius: 50px;
-}
-
-.showcase-area .container .left{
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-
-.title-showcase{
-    font-weight: 700;
-}
-
-.italic-p{
-    font-weight: 500;
-}
-
-.showcase-p{
-    font-weight: ligher;
-}
-
-.subscribe-form{
-text-align: center;
-padding-bottom: 150px;
-}
-
-.input-subscribe{
-    padding: 15px;
-    width: 400px;
-    border-color: #E7424B;
-    margin-right: 50px;
-}
-
-.subscribe-btn{
-    border-radius: none !important;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 /* footer */

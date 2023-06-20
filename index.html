@@ -34,10 +34,10 @@
             <a class="nav-link nav-items" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="aboutus.html">About us</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Contact us</a>
+            <a class="nav-link" href="contactus.html">Contact us</a>
         </li>
         </ul>
     </div>
@@ -45,51 +45,9 @@
 
     <!-- carousel -->
 <div class="carousel-page">
-    <button id="rzp-button1">Pay</button>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-var options = {
-    "key": "rzp_test_66NIq2UWHGy5YL", // Enter the Key ID generated from the Dashboard
-    "amount": "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "INR",
-    "name": "Acme Corp", //your business name
-    "description": "Test Transaction",
-    "image": "https://example.com/your_logo",
-    "order_id": "order_HDk1Bv9EfEeONBaaK1YdwjTS", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-    "handler": function (response){
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature)
-    },
-    "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
-        "name": "Gaurav Kumar", //your customer's name
-        "email": "gaurav.kumar@example.com", 
-        "contact": "9000090000"  //Provide the customer's phone number for better conversion rates 
-    },
-    "notes": {
-        "address": "Razorpay Corporate Office"
-    },
-    "theme": {
-        "color": "#3399cc"
-    }
-};
-var rzp1 = new Razorpay(options);
-rzp1.on('payment.failed', function (response){
-        alert(response.error.code);
-        alert(response.error.description);
-        alert(response.error.source);
-        alert(response.error.step);
-        alert(response.error.reason);
-        alert(response.error.metadata.order_id);
-        alert(response.error.metadata.payment_id);
-});
-document.getElementById('rzp-button1').onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-}
-</script>
+<a href="https://rzp.io/l/1d6Hom5" target="_blank">
 <img src="img/carousel.png" alt="carousel-img" width="100%">
-
+</a>
 </div>
 
 
@@ -234,8 +192,9 @@ document.getElementById('rzp-button1').onclick = function(e){
       <div class="footer-nav">
       <ol>
         <ul style="list-style-type: none;">
-            <a class="footer-about"href=""><li class="footer-about-us">About us</li></a>
-            <a class="footer-contact"href=""><li class="footer-contact-us">Contact us</li></a>
+            <a class="footer-contact"href="#"><li class="footer-about-us">Home</li></a>
+            <a class="footer-about"href="aboutus.html"><li class="footer-about-us">About us</li></a>
+            <a class="footer-contact"href="contactus.html"><li class="footer-contact-us">Contact us</li></a>
         </ul>
       </ol>
         </div>
