@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif !important;
     overflow-x: hidden;
@@ -136,9 +142,10 @@ padding-bottom: 150px;
     margin-left: 120px;
     color: #515151;
     margin-bottom: 0;
-    width: 300px;
+    width: 400px;
     margin-bottom: 250px;
 }
+
 
 .footer-icon{
     width: 100px;

@@ -45,10 +45,53 @@
 
     <!-- carousel -->
 <div class="carousel-page">
-<a href="https://www.google.com/" target="_blank">
+    <button id="rzp-button1">Pay</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_66NIq2UWHGy5YL", // Enter the Key ID generated from the Dashboard
+    "amount": "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    "name": "Acme Corp", //your business name
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "order_HDk1Bv9EfEeONBaaK1YdwjTS", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature)
+    },
+    "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
+        "name": "Gaurav Kumar", //your customer's name
+        "email": "gaurav.kumar@example.com", 
+        "contact": "9000090000"  //Provide the customer's phone number for better conversion rates 
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+rzp1.on('payment.failed', function (response){
+        alert(response.error.code);
+        alert(response.error.description);
+        alert(response.error.source);
+        alert(response.error.step);
+        alert(response.error.reason);
+        alert(response.error.metadata.order_id);
+        alert(response.error.metadata.payment_id);
+});
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
 <img src="img/carousel.png" alt="carousel-img" width="100%">
+
 </div>
-</a>
+
 
 <!-- Funds needed hero-->
 <div class="hero">
@@ -178,7 +221,7 @@
       <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none ">
         <img class="footer-logo" src="img/giveaid logo.png" alt="logo-footer">
       </a>
-        <p class="footer-para" style="margin-bottom: 0;">Introducing MoneyVista, your ultimate banking companion for seamless money transfers to friends. With MoneyVista, you can effortlessly send money to your friends and loved ones with just a few clicks.</p>
+        <p class="footer-para" style="margin-bottom: 0;">We are India's most trusted and transparent crowdfunding platform, with a vision to create a social impact.  Our unique model allows people from across the globe to donate towards raising funds for products required by NGOs and charities in India, which are then delivered to them by us</p>
         <div class="footer-icon">
         <a href="https://github.com/harrish-coder" target="_blank"><i class="fa-brands fa-github github"></i></a>
         <a href="https://www.linkedin.com/in/harrish-m-a2a3ba214/" target="_blank"><i class="fa-brands fa-linkedin linkedin"></i></a>
