@@ -94,3 +94,19 @@ button{
 .showcase-p{
     font-weight: ligher;
 }
+
+.subscribe-form{
+text-align: center;
+padding-bottom: 50px;
+}
+
+.input-subscribe{
+    padding: 15px;
+    width: 400px;
+    border-color: #E7424B;
+    margin-right: 50px;
+}
+
+.subscribe-btn{
+    border-radius: none !important;
+}
