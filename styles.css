@@ -48,6 +48,39 @@ button{
     font-weight: 700;
 }
 
+/* banner */
+#myElement{
+    display: none;
+    visibility: hidden;
+}
+
+#myElement{
+    display: block;
+    visibility: visible;
+}
+
+.razorpay-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Add any necessary styles for the container */
+  }
+  
+  .razorpay-container form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Position the Razorpay button wherever you want within the container */
+    /* Add any necessary styles for the form */
+  }
+  
+  .my-button:focus + .razorpay-container form {
+    /* Hide the Razorpay button when the "my-button" is clicked */
+    visibility: hidden;
+    pointer-events: none;
+    /* Add any necessary styles when hidden */
+  }
+
 /* hero funds */
 .title{
     text-align: center;
