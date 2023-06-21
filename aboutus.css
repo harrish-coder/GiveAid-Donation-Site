@@ -28,6 +28,10 @@ button{
     width: 256px;
 }
 
+.card-body h5{
+    font-weight: bold;
+}
+
 h5, .card-text{
     text-align: center;
 }
