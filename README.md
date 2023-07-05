@@ -16,5 +16,3 @@ live url: https://giveaid.netlify.app/
 YouTube url: https://youtu.be/QfJLR_mdEjQ
 
 linkedin url: https://tinyurl.com/45dx57yh
-
-P.S: Star🌟this repo if you find it useful. 
