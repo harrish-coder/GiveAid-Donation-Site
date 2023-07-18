@@ -1,263 +1,259 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins', sans-serif !important;
-    overflow-x: hidden;
-    scroll-behavior: smooth !important;
-}
-
-nav{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 
-button{
-    background-color: #E7424B;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 15px !important;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    width: 256px;
+nav {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: #e7424b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px !important;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  width: 256px;
 }
 
 /* navbar */
-.navbar .container{
-    max-width: 1500px;
+.navbar .container {
+  max-width: 1500px;
 }
 
-.navbar .container ul a{
-    color: #515151;
-    text-transform: uppercase;
-    font-weight: lighter;
+.navbar .container ul a {
+  color: #515151;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
-.navbar .container ul a:hover{
-    color: #e7424abb;
-    text-transform: uppercase;
-    font-weight: 700;
+.navbar .container ul a:hover {
+  color: #e7424abb;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* banner */
-#myElement{
-    display: none;
-    visibility: hidden;
+#myElement {
+  display: none;
+  visibility: hidden;
 }
 
-#myElement{
-    display: block;
-    visibility: visible;
+#myElement {
+  display: block;
+  visibility: visible;
 }
 
 .razorpay-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /* Add any necessary styles for the container */
-  }
-  
-  .razorpay-container form {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* Position the Razorpay button wherever you want within the container */
-    /* Add any necessary styles for the form */
-  }
-  
-  .my-button:focus + .razorpay-container form {
-    /* Hide the Razorpay button when the "my-button" is clicked */
-    visibility: hidden;
-    pointer-events: none;
-    /* Add any necessary styles when hidden */
-  }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Add any necessary styles for the container */
+}
+
+.razorpay-container form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Position the Razorpay button wherever you want within the container */
+  /* Add any necessary styles for the form */
+}
+
+.my-button:focus + .razorpay-container form {
+  /* Hide the Razorpay button when the "my-button" is clicked */
+  visibility: hidden;
+  pointer-events: none;
+  /* Add any necessary styles when hidden */
+}
 
 /* hero funds */
-.title{
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+.title {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.progress .custom-color{
-    background-color: #E7424B;    
+.progress .custom-color {
+  background-color: #e7424b;
 }
 
-.card-body .card-text-bold{
-    font-weight: bold;
+.card-body .card-text-bold {
+  font-weight: bold;
 }
 
-.btn{
-    color: #ffffff !important;
+.btn {
+  color: #ffffff !important;
 }
 
 /* showcase area */
-.showcase-area{
-    margin-top: 150px;
-    background-color: #F2F2F2;
+.showcase-area {
+  margin-top: 150px;
+  background-color: #f2f2f2;
 }
 
-.showcase-area .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+.showcase-area .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }
 
-.showcase-area .container .right img{
-    padding: 5%;
-    border-radius: 50px;
+.showcase-area .container .right img {
+  padding: 5%;
+  border-radius: 50px;
 }
 
-.showcase-area .container .left{
-    font-weight: 700;
-    font-size: 2.5rem;
+.showcase-area .container .left {
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
-.title-showcase{
-    font-weight: 700;
+.title-showcase {
+  font-weight: 700;
 }
 
-.italic-p{
-    font-weight: 500;
+.italic-p {
+  font-weight: 500;
 }
 
-.showcase-p{
-    font-weight: ligher;
+.showcase-p {
+  font-weight: ligher;
 }
 
-.subscribe-form{
-text-align: center;
-padding-bottom: 150px;
+.subscribe-form {
+  text-align: center;
+  padding-bottom: 150px;
 }
 
-.input-subscribe{
-    padding: 15px;
-    width: 400px;
-    border-color: #E7424B;
-    margin-right: 50px;
+.input-subscribe {
+  padding: 15px;
+  width: 400px;
+  border-color: #e7424b;
+  margin-right: 50px;
 }
 
-.subscribe-btn{
-    border-radius: none !important;
+.subscribe-btn {
+  border-radius: none !important;
 }
 
 /* footer */
-.footer{
-    display: flex;
+.footer {
+  display: flex;
 }
 
-.footer-left{
-    width: 700px;
+.footer-left {
+  width: 700px;
 }
-
 
 .footer-logo {
-    margin-left: 120px;
-    width: 180px;
-    height: 140px;
-    /* border: #000000 solid; */
-    box-sizing: border-box;
+  margin-left: 120px;
+  width: 180px;
+  height: 140px;
+  /* border: #000000 solid; */
+  box-sizing: border-box;
 }
 
-
-.footer-para{
-    margin-left: 120px;
-    color: #515151;
-    margin-bottom: 0;
-    width: 400px;
-    margin-bottom: 250px;
+.footer-para {
+  margin-left: 120px;
+  color: #515151;
+  margin-bottom: 0;
+  width: 400px;
+  margin-bottom: 250px;
 }
 
-
-.footer-icon{
-    width: 100px;
-    margin-left: 110px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
+.footer-icon {
+  width: 100px;
+  margin-left: 110px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.footer-icon a{
-    text-decoration: none;
-    color: #4f4f4f;
+.footer-icon a {
+  text-decoration: none;
+  color: #4f4f4f;
 }
 
-.github:hover{
-    color: #333;
+.github:hover {
+  color: #333;
 }
 
-.linkedin:hover{
-    color: #0077B5;
+.linkedin:hover {
+  color: #0077b5;
 }
 
-.instagram:hover{
-    color: #C13584;
+.instagram:hover {
+  color: #c13584;
 }
 
-.twitter:hover{
-    color: #1DA1F2;
+.twitter:hover {
+  color: #1da1f2;
 }
 
-
-.back-to-top{
-    display: flex;
-    margin-top: 280px;
-    margin-left: 15%;
+.back-to-top {
+  display: flex;
+  margin-top: 280px;
+  margin-left: 15%;
 }
 
-.back-to-top a{
-    color: #515151;
+.back-to-top a {
+  color: #515151;
 }
 
-.footer-title{
-    padding-top: 25px;
-    padding-left: 55px;
+.footer-title {
+  padding-top: 25px;
+  padding-left: 55px;
 }
 
-.footer-nav{
-    margin-top: 70px;
+.footer-nav {
+  margin-top: 70px;
 }
 
-.footer-about{
-    text-decoration: none;
+.footer-about {
+  text-decoration: none;
 }
 
-.footer-about-us{
-    padding-bottom: 50px;
-    color: #515151;
+.footer-about-us {
+  padding-bottom: 50px;
+  color: #515151;
 }
 
-.footer-contact-us{
-    color: #515151;
+.footer-contact-us {
+  color: #515151;
 }
 
-.footer-contact{
-    text-decoration: none;
+.footer-contact {
+  text-decoration: none;
 }
 
-.footer-copyright{
-    text-align: center;
-    margin-top: 50px;
-    background-color: #E7424B;
-    color: #ffffff;
-    padding: 25px;
-    width: 100%;
-    margin-left: 7.5%;
-    margin-left: 0;
+.footer-copyright {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #e7424b;
+  color: #ffffff;
+  padding: 25px;
+  width: 100%;
+  margin-left: 7.5%;
+  margin-left: 0;
 }
 
-.footer-copyright-text a{
-    text-decoration: none;
-    color: #ffffff;
+.footer-copyright-text a {
+  text-decoration: none;
+  color: #ffffff;
 }
