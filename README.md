@@ -9,6 +9,8 @@ Payment Gateway : `Razorpay`
 
 Flow of the Website: Home Page > Donate> Donation amount > Verify Confirmation
 
+![screenshot](homepage.png)
+
 live url: https://giveaid.netlify.app/
 
 YouTube url: https://youtu.be/QfJLR_mdEjQ
