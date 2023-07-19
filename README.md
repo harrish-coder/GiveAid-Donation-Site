@@ -13,7 +13,7 @@ Note: Website is not responsive yet
 
 ![screenshot](homepage.png)
 
-live url: https://giveaid.netlify.app/
+live url: https://harrishdev.github.io/GiveAid/
 
 YouTube url: https://youtu.be/QfJLR_mdEjQ
 
