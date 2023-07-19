@@ -258,6 +258,7 @@ button {
   color: #ffffff;
 }
 
+/* home page */
 /* responsive: small devices*/
 @media only screen and (max-width: 576px) {
   .cards {
