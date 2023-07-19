@@ -258,7 +258,7 @@ button {
   color: #ffffff;
 }
 
-/* responsive max-width: 576px*/
+/* responsive: small devices*/
 @media only screen and (max-width: 576px) {
   .cards {
     padding-left: 20%;
@@ -277,5 +277,15 @@ button {
   }
   .footer-right {
     display: none;
+  }
+}
+
+/* responisve: medium devices */
+@media only screen and (max-width: 992px) {
+  .right {
+    display: none;
+  }
+  .showcase-area .container {
+    padding-left: 35%;
   }
 }
